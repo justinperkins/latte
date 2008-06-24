@@ -1,0 +1,4 @@
+Latte is a simple JavaScript class to aid in testing whether methods are invoked 
+during other method calls or not.
+
+The name comes from Mocha, the Ruby library for mocking and stubbing methods, to help write good tests.
