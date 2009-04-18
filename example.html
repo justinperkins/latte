@@ -70,7 +70,7 @@
       var b = new Barista('justin');
       mock.expects('_removeEspresso');
       b.makeItASingle();
-      assert(mock.wasInvoked('_removeEspresso'), 'Barista#makeItASingle expected to invoke _removeEspresso but did not');
+      assert(mock.wasInvoked('_removeEspresso'), 'Barista#makeItASingle expected to invoke _removeEspresso but did not (this was an intentional failure to illustrate failed expectations)');
 
       mock.teardown();
     }},
