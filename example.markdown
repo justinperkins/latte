@@ -1,36 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <title>Latte example with UnitTest</title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <script src="dependencies/prototype.js" type="text/javascript"></script>
-  <script src="dependencies/unittest.js" type="text/javascript"></script>
-  <script src="latte.js" type="text/javascript"></script>
-  <link rel="stylesheet" href="dependencies/unittest.css" type="text/css" />
-  <script type="text/javascript">
-    var Barista = Class.create({
-      initialize: function(name){
-        this.name = name;
-      },
-      makeItADouble: function(){
-        this._addEspresso();
-      },
-      makeItASingle: function(){
-        // not going to do anything, to illustrate a method not being invoked
-      },
-      withCream: function(nonDairy){
-        if (nonDairy) this._addSoy();
-        else this._addMilk();
-      },
-      _addMilk: function(){},
-      _addSoy: function(){},
-      _addEspresso: function(){},
-      _removeEspresso: function(){}
-    })
-  </script>
-</head>
-<body>
+<script src="http://github.com/justinperkins/latte/raw/master/dependencies/prototype.js" type="text/javascript"></script>
+<script src="http://github.com/justinperkins/latte/raw/master/dependencies/unittest.js" type="text/javascript"></script>
+<script src="http://github.com/justinperkins/latte/raw/master/latte.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://github.com/justinperkins/latte/raw/master/dependencies/unittest.css" type="text/css" />
+<script type="text/javascript">
+  var Barista = Class.create({
+    initialize: function(name){
+      this.name = name;
+    },
+    makeItADouble: function(){
+      this._addEspresso();
+    },
+    makeItASingle: function(){
+      // not going to do anything, to illustrate a method not being invoked
+    },
+    withCream: function(nonDairy){
+      if (nonDairy) this._addSoy();
+      else this._addMilk();
+    },
+    _addMilk: function(){},
+    _addSoy: function(){},
+    _addEspresso: function(){},
+    _removeEspresso: function(){}
+  })
+</script>
 
 <div id="content">
 
@@ -93,5 +85,3 @@
   }, {testLog: "testlog"}); 
 // ]]>
 </script>
-</body>
-</html>
