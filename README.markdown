@@ -2,7 +2,7 @@
 
 Latte is a really simple class to aid in detecting whether methods are invoked or not when you call other methods on a given object.
 
-[View the example](example.html), written for UnitTest (scriptaculous testing library)
+[View the example](http://github.com/justinperkins/latte/blob/master/example.markdown), written for UnitTest (scriptaculous testing library)
 
 Say you have a class:
 
@@ -16,7 +16,7 @@ Say you have a class:
 
 And you want to verify that when you call the `Barista#makeCoffee` method, the `Barista#askForSugar` method should be called.
 
-You include [latte.js](latte.js) in your page and then you write something like this:
+You include [latte.js](http://github.com/justinperkins/latte/blob/master/latte.js) in your page and then you write something like this:
 
     var mock = new Latte(Barista, 'askForSugar');
     var b = new Barista();
